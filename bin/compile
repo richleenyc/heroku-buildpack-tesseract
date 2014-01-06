@@ -13,7 +13,7 @@ curl https://s3.amazonaws.com/tesseract-ocr/heroku/tesseract-ocr-3.02.02.tar.gz 
 
 echo 'Getting tesseract-ocr training data'
 echo 'English training data'
-curl https://tesseract-ocr.googlecode.com/files/tesseract-ocr-3.02.02.eng.tar.gz \
+curl https://tesseract-ocr.googlecode.com/files/tesseract-ocr-3.02.eng.tar.gz \
   -o - | tar -xz -C $INSTALL_DIR_TRAINING_DATA -f -
 if [ $TESSERACT_OCR_LANGUAGES ]
 then
